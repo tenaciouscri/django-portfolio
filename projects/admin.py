@@ -1,8 +1,10 @@
 from django.contrib import admin
 
-# from .models import Project
+from .models import Project
 
-# class ProjectAdmin(admin.ModelAdmin):
-#     pass
 
-# admin.site.register(Project, ProjectAdmin)
+class ProjectAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Project, ProjectAdmin)
