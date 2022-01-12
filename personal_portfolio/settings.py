@@ -128,3 +128,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Redirect upon login/logout
 LOGIN_REDIRECT_URL = "dashboard"
 LOGOUT_REDIRECT_URL = "dashboard"
+
+# Email host
+EMAIL_HOST = "localhost"
+EMAIL_PORT = 1025
