@@ -140,10 +140,10 @@ LOGOUT_REDIRECT_URL = "dashboard"
 EMAIL_HOST = "localhost"
 EMAIL_PORT = 1025
 
-# try:
-#     from local_settings import *
-# except ImportError:
-#     pass
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 # GITHUB LOGIN
 AUTHENTICATION_BACKENDS = (
