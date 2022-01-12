@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "projects",
     "blog",
     "users",
+    "social_django",
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,8 @@ TEMPLATES = [
                 "django.template.context_processors.request",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
+                "social_django.context_processors.backends",
+                "social_django.context_processors.login_redirect",
             ],
         },
     },
@@ -132,3 +135,9 @@ LOGOUT_REDIRECT_URL = "dashboard"
 # Email host
 EMAIL_HOST = "localhost"
 EMAIL_PORT = 1025
+
+# GITHUB LOGIN
+AUTHENTICATION_BACKENDS = [
+    "django.contrib.auth.backends.ModelBackend",
+    "social_core.backends.github.GithubOAuth2",
+]
