@@ -136,7 +136,9 @@ LOGOUT_URL = "logout"
 LOGIN_REDIRECT_URL = "dashboard"
 LOGOUT_REDIRECT_URL = "dashboard"
 
-# Email host
+# EMAIL HOST
+# To view email:
+# Enter python -m smtpd -n -c DebuggingServer localhost:1025 on separate terminal
 EMAIL_HOST = "localhost"
 EMAIL_PORT = 1025
 
